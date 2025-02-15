@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --color-primary: #008B99;
+    --color-font-primary:#21C9DA;
+    --color-secondary: #5E5C5C;
+    --font-black-color:#151515;
+    --button-background-color:#0B0B0B;
+    --button-padding:8px 30px
+}
+
+
+.button-primary {
+    color: var(--color-font-primary);
+    padding: var(--button-padding);
+    border-radius: 5rem;
+    border: 1.23px solid #FFFFFF1F;
+    background-color: var(--button-background-color);
+}
+
+.button-secondary {
+    padding: var(--button-padding);
+    border-radius: 5rem;
+    color: #929292;
+    background-color: var(--button-background-color);
+}
+.button-secondary:hover {
+    color: white;
+    background-color: #929292;
+}
