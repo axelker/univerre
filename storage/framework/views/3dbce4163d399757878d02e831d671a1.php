@@ -3,16 +3,17 @@
     $letter = json_decode($json, true);
 ?>
 
-<?php echo app('Illuminate\Foundation\Vite')('resources/css/letter.css'); ?>
+<?php echo app('Illuminate\Foundation\Vite')(['resources/js/letter.js','resources/css/letter.css']); ?>
+
 
 <section class="max-w-1/2" id="letter">
     <div>
         <div class="envelop">
-            <img src="/images/envelope-top.png" alt="envelope top">
-            <img src="/images/envelope-backside.png" alt="envelope backside">
-            <img src="/images/envelope-bottom.png"  alt="envelope bottom">
-            <img src="/images/nfc-pin.png" alt="nfc pin">
-            <span>A story of a connected bottle by Univerre<span>
+            <img class="envelope-top" src="/images/envelope-top.png" alt="envelope top">
+            <img class="envelope-backside" src="/images/envelope-backside.png" alt="envelope backside">
+            <img class="envelope-bottom" src="/images/envelope-bottom.png" alt="envelope bottom">
+            <img class="nfc-pin" src="/images/nfc-pin.png" alt="nfc pin">
+            <span class="message">A story of a connected bottle by Univerre</span>
         </div>
         <img src="/images/nfc-open.png"  alt="nfc pins">
 
@@ -23,9 +24,16 @@
         
     </div>
 
-
-    <p>Are you interested in exploring more?</p>
-    <button> Yes, I want explore</button>
-    <button> No</button>
+    <div class="text-center">
+        <p>Are you interested in exploring more?</p>
+        <div class="">
+            <button class="button-primary explore-button">
+                Yes, I want explore
+            </button>
+            <button class="button-secondary"> No</button>
+        </div>
+        
+    </div>
 </section>
+
 <?php /**PATH C:\Users\33634\Desktop\dev-info\it-test\Univerre\landing-page\resources\views/sections/letter.blade.php ENDPATH**/ ?>
