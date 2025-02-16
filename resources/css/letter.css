@@ -196,11 +196,13 @@
 }
 
 .explore-button {
+    position: relative;
     transition: all 0.5s ease-in-out;
 }
 
 
 .explore-button::before {
+    position: absolute;
     content: "";
     top: -5px;
     right: 31px;

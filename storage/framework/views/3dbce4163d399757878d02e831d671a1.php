@@ -41,7 +41,6 @@
             </button>
             <button class="button-secondary"> No</button>
         </div>
-        
     </div>
 </section>
 
