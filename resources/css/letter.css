@@ -26,20 +26,21 @@
     width: 100%;
     top: -94px;
     z-index: 1;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
-.envelope-top.closed {
+.envelope-top.hidden {
+    opacity: 0;
+}
+.envelope-top-closed {
+    opacity: 0;
+}
+.envelope-top-closed.visible {
     position: absolute;
     width: 100%;
-    top: 30px;
+    top: 24px;
     z-index: 3;
-    transform: rotateX(180deg);
-    opacity: 0;
-    transition: all 2s ease-in-out;
-}
-
-.envelope-top.fade-in {
     opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 
@@ -59,6 +60,7 @@
 }
 
 /* NFC pin centré fix */
+
 .nfc-pin {
     position: absolute;
     width: 80px;
@@ -66,17 +68,48 @@
     bottom: 38%;
     z-index: 4;
 }
-.nfc-pins-hidden {
+
+
+.nfc-pins-back {
     position: absolute;
-    z-index: 2;
+    top: -90px;
     opacity: 0;
-    top: -65px;
-    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+    left: 25px;
+    width: 100%;
+    z-index: 1;
+    transition: transform 1.5s ease-in-out;
 }
 
-.nfc-pins-visible {
+
+.nfc-pins-front {
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    left: 120px;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    transition: transform 1.5s ease-in-out;
+}
+
+.nfc-pin-grey {
+    transform: translateX(-50px);
+}
+.nfc-pin-red {
+    transform: translateY(-20px);
+}
+.nfc-pin-black {
+    position: absolute;
+    left: 140px;
+    top: -10px;
+}
+
+.visible {
     opacity: 1;
-    transform: translateY(100px);
+}
+.translate {
+    transform: translateY(125px);
 }
 
 #nfc-card {
@@ -84,7 +117,7 @@
 }
 .nfc-card-content-visible {
     z-index: 5;
-    opacity: 1 !important ;
+    opacity: 1 !important;
 }
 .nfc-card-content-hidden {
     position: absolute;

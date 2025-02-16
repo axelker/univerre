@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const envelope = document.querySelector(".envelop");
     const letterContent = document.querySelector(".letter-content");
     const nfcCard = document.querySelector(".nfc-card-content-hidden");
-    const nfcPins = document.querySelector(".nfc-pins-hidden");
     const envelopeTop = document.querySelector(".envelope-top");
+    const envelopeTopClosed = document.querySelector(".envelope-top-closed");
 
 
     envelope.addEventListener("click", function () {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         if (letterContent.classList.contains("letter-content-out")) {
             animationIsAlreadyPlayed = true;
-            animatedtest(letterContent,nfcCard,nfcPins,envelopeTop);
+            animatedtest(letterContent,nfcCard,envelopeTop,envelopeTopClosed);
 
         } else if(!envelopeTop.classList.contains("closed")) {
             letterContent.classList.add("letter-content-out");
@@ -33,9 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function animatedtest(letterContent,nfcCard,nfcPins,envelopeTop) {
+function animatedtest(letterContent,nfcCard,envelopeTop,envelopeTopClosed) {
     nfcCard.classList.add("nfc-card-content-visible");
     letterContent.classList.add("letter-content-in");
+    const nfcPinsFront = document.querySelector(".nfc-pins-front");
+    const nfcPinsBack = document.querySelector(".nfc-pins-back");
 
     setTimeout(() => {
 
@@ -45,21 +47,24 @@ function animatedtest(letterContent,nfcCard,nfcPins,envelopeTop) {
 
             // 4️⃣ Ensuite, les pins apparaissent et descendent
             setTimeout(() => {
-                nfcPins.classList.add("nfc-pins-visible");
-                
+                nfcPinsFront.classList.add("visible");
+                nfcPinsBack.classList.add("visible")
                 setTimeout(() => {
-                    envelopeTop.classList.add("closed");
-
-                    // 🌟 Ajout du fondu après un court délai
+                    nfcPinsBack.classList.add("translate");
+                    nfcPinsFront.classList.add("translate");
                     setTimeout(() => {
-                        envelopeTop.classList.add("fade-in");
-                    }, 500);
-
-                }, 1500);
+                        nfcPinsFront.classList.remove("visible");
+                        nfcPinsBack.classList.remove("visible");
+                        envelopeTop.classList.add("hidden");
+                        envelopeTopClosed.classList.add("visible");
+                       
+                    }, 1500);
+                }, 1000);
+               
 
             }, 1000); // Attente avant l'apparition des pins
 
-        }, 1000); // Durée d'affichage de la carte NFC
+        }, 2000); // Durée d'affichage de la carte NFC
 
     }, 1000);
 }

@@ -10,11 +10,23 @@
     <div>
         <div class="envelop" (click)="">
             <img class="envelope-top" src="/images/envelope-top.png" alt="envelope top">
+            <img class="envelope-top-closed" src="/images/envelope-top-closed.png" alt="envelope top">
             <img class="envelope-backside" src="/images/envelope-backside.png" alt="envelope backside">
             <img class="envelope-sides" src="/images/envelope-sides.png" alt="envelope backside">
             <img class="envelope-bottom" src="/images/envelope-bottom.png" alt="envelope bottom">
             <img class="nfc-pin" src="/images/nfc-pin.png" alt="nfc pin">
-            <img class="nfc-pins-hidden" src="/images/pins.png"  alt="nfc pins">
+            <div class="nfc-pins">
+                <div class="nfc-pins-back">
+                    <img src="/images/pins.png" alt="nfc pins">
+                </div>
+    
+                <div class="nfc-pins-front">
+                    <img class="nfc-pin-grey" src="/images/pins-grey.png"  alt="nfc pins grey">
+                    <img class="nfc-pin-red" src="/images/pins-red.png"  alt="nfc pins red">
+                    <img class="nfc-pin-black" src="/images/pins-black.png"  alt="nfc pins black">
+                </div>
+            </div>
+           
             <img id="nfc-card" class="nfc-card-content-hidden" src="/images/nfc-card-content.png" alt="nfc card content">
             <span class="message">A story of a connected bottle by Univerre</span>
         </div>
