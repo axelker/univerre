@@ -40,7 +40,7 @@
         </main>
 
         <footer class="sticky z-40 bottom-0 w-full bg-black text-white text-center text-sm py-4 ">
-            Copyright: © [2025] A Smart Packaging Experience by Univerre
+            <p class="copy"> Copyright: © [2025] A Smart Packaging Experience by Univerre<p>
         </footer>
 
     </body>

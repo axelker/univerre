@@ -1,6 +1,5 @@
 #letter {
     height: 100vh;
-
 }
 .envelop {
     position: relative;
@@ -143,7 +142,7 @@
 .letter-content {
     position: absolute;
     max-width: 393px;
-    top: 255px;
+    top: 35px;
     height: 200px;
     padding: 20px 54px;
     background: white;
@@ -152,10 +151,10 @@
 }
 
 .letter-content.letter-content-out {
-    top: 180px;
+    top: -38px;
 }
 .letter-content.letter-content-in {
-    top: 255px;
+    top: 35px;
 }
 
 .client-name {
@@ -179,7 +178,7 @@
 
 
 .call-to-action {
-    position: absolute;
+    position: relative;
     margin-top: 20px;
     padding: 0px 15px;
 }
@@ -191,15 +190,14 @@
     margin-bottom: 30px;
 
 }
+
 .explore-button {
-    position: relative;
     transition: all 0.5s ease-in-out;
 }
 
 
 .explore-button::before {
     content: "";
-    position: absolute;
     top: -5px;
     right: 31px;
     width: 50px;

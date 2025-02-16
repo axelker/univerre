@@ -7,8 +7,7 @@
 
 
 <section id="letter">
-    <div>
-        <div class="envelop">
+        <div class="envelop mx-auto">
             <img class="envelope-top" src="/images/envelope-top.png" alt="envelope top">
             <img class="envelope-top-closed" src="/images/envelope-top-closed.png" alt="envelope top">
             <img class="envelope-backside" src="/images/envelope-backside.png" alt="envelope backside">
@@ -26,21 +25,17 @@
                     <img class="nfc-pin-black" src="/images/pins-black.png"  alt="nfc pins black">
                 </div>
             </div>
-           
+            <div class="letter-content">
+                <h2 class="client-name">Dear <?php echo e($letter['clientName']); ?></h2>
+                <p class="client-message"><?php echo e($letter['content']); ?></p>
+            </div>
             <img id="nfc-card" class="nfc-card-content-hidden" src="/images/nfc-card-content.png" alt="nfc card content">
             <span class="message">A story of a connected bottle by Univerre</span>
         </div>
 
-        <div class="letter-content">
-            <h2 class="client-name">Dear <?php echo e($letter['clientName']); ?></h2>
-            <p class="client-message"><?php echo e($letter['content']); ?></p>
-        </div>
-        
-    </div>
-
     <div class="call-to-action">
         <p class="title" >Are you interested in exploring more?</p>
-        <div class="grid grid-cols-1 gap-4 justify-center place-items-center">
+        <div class="buttons grid grid-cols-1 gap-4 justify-center place-items-center">
             <button class="button-primary explore-button">
                 Yes, I want explore
             </button>
