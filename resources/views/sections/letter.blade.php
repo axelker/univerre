@@ -8,25 +8,27 @@
 
 <section id="letter">
     <div>
-        <div class="envelop">
+        <div class="envelop" (click)="">
             <img class="envelope-top" src="/images/envelope-top.png" alt="envelope top">
             <img class="envelope-backside" src="/images/envelope-backside.png" alt="envelope backside">
+            <img class="envelope-sides" src="/images/envelope-sides.png" alt="envelope backside">
             <img class="envelope-bottom" src="/images/envelope-bottom.png" alt="envelope bottom">
             <img class="nfc-pin" src="/images/nfc-pin.png" alt="nfc pin">
+            <img class="nfc-pins-hidden" src="/images/pins.png"  alt="nfc pins">
+            <img id="nfc-card" class="nfc-card-content-hidden" src="/images/nfc-card-content.png" alt="nfc card content">
             <span class="message">A story of a connected bottle by Univerre</span>
         </div>
-        <img src="/images/nfc-open.png"  alt="nfc pins">
 
-        <div class="letter-content px-9 py-6 text-black text-center">
-            <h2 class="mb-2">Dear {{ $letter['clientName'] }}</h2>
-            <p>{{ $letter['content'] }}</p>
+        <div class="letter-content">
+            <h2 class="client-name">Dear {{ $letter['clientName'] }}</h2>
+            <p class="client-message">{{ $letter['content'] }}</p>
         </div>
         
     </div>
 
-    <div class="text-center">
-        <p>Are you interested in exploring more?</p>
-        <div class="">
+    <div class="call-to-action">
+        <p class="title" >Are you interested in exploring more?</p>
+        <div class="grid grid-cols-1 gap-4 justify-center place-items-center">
             <button class="button-primary explore-button">
                 Yes, I want explore
             </button>

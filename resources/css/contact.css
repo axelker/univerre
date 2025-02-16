@@ -5,9 +5,8 @@
     backdrop-filter: blur(150px);
     border-top: solid 1px white;
 }
-p,a {
-    font-family: "Jost";
-    font-weight: 400;
+#contact p,a {
+    font-weight: 300;
     font-size: 18px;
     line-height: 23.4px;
 }
