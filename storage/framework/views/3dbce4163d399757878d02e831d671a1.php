@@ -6,7 +6,7 @@
 <?php echo app('Illuminate\Foundation\Vite')(['resources/js/letter.js','resources/css/letter.css']); ?>
 
 
-<section class="max-w-1/2" id="letter">
+<section id="letter">
     <div>
         <div class="envelop">
             <img class="envelope-top" src="/images/envelope-top.png" alt="envelope top">

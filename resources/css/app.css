@@ -21,6 +21,11 @@
     background-color: var(--button-background-color);
 }
 
+.button-primary:hover{
+    color: white;
+    background-color: var(--color-primary);
+}
+
 .button-secondary {
     padding: var(--button-padding);
     border-radius: 5rem;
