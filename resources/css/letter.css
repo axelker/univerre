@@ -4,8 +4,8 @@
 .envelop {
     position: relative;
     margin-top: 100px;
-    width: 400px;
-    height: 300px;
+    width: 340px;
+    height: 304px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
 .envelope-top {
     position: absolute;
     width: 100%;
-    top: -94px;
+    top: -55px;
     z-index: 1;
     transition: all 1s ease-in-out;
 }
@@ -36,7 +36,7 @@
 .envelope-top-closed.visible {
     position: absolute;
     width: 100%;
-    top: 24px;
+    top: 45px;
     z-index: 3;
     opacity: 1;
     transition: all 1s ease-in-out;
@@ -54,7 +54,7 @@
 .envelope-bottom {
     position: absolute;
     width: 100%;
-    bottom: 37px;
+    bottom: 55px;
     z-index: 4;
 }
 
@@ -64,16 +64,16 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    bottom: 38%;
+    bottom: 35%;
     z-index: 4;
 }
 
 
 .nfc-pins-back {
     position: absolute;
-    top: -90px;
+    top: -62px;
     opacity: 0;
-    left: 25px;
+    left: 5px;
     width: 100%;
     z-index: 1;
     transition: transform 1.5s ease-in-out;
@@ -82,9 +82,9 @@
 
 .nfc-pins-front {
     position: absolute;
-    top: 50px;
+    top: 77px;
     opacity: 0;
-    left: 120px;
+    left: 87px;
     width: 100%;
     z-index: 2;
     display: flex;
@@ -93,15 +93,19 @@
 }
 
 .nfc-pin-grey {
-    transform: translateX(-50px);
+    position: absolute;
+    left: -30px;
+    top: -12px;
 }
 .nfc-pin-red {
-    transform: translateY(-20px);
+    position: absolute;
+    left: 65px;
+    top: -15px;
 }
 .nfc-pin-black {
     position: absolute;
-    left: 140px;
-    top: -10px;
+    left: 129px;
+    top: -23px;
 }
 
 .visible {
@@ -112,7 +116,7 @@
 }
 
 #nfc-card {
-    width: 393px;
+    width: 335px;
 }
 .nfc-card-content-visible {
     z-index: 5;
@@ -128,7 +132,7 @@
 /* Texte */
 .message {
     position: absolute;
-    bottom: 50px;
+    bottom: 65px;
     line-height: 17.15px;
     font-family: "Grape Nuts", serif;
     font-weight: 400;
@@ -141,10 +145,10 @@
 
 .letter-content {
     position: absolute;
-    max-width: 393px;
-    top: 35px;
-    height: 200px;
-    padding: 20px 54px;
+    max-width: 335px;
+    top: 56px;
+    height: 170px;
+    padding: 20px 45px;
     background: white;
     z-index: 1;
     transition: top 0.8s ease-in-out;
@@ -154,11 +158,11 @@
     top: -38px;
 }
 .letter-content.letter-content-in {
-    top: 35px;
+    top: 56px;
 }
 
 .client-name {
-    margin-bottom: 35px;
+    margin-bottom: 18px;
     font-family: "Grape Nuts";
     font-weight: 400;
     font-size: 20px;
