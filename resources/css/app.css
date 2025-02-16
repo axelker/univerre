@@ -12,11 +12,12 @@
     --button-background-color:#0B0B0B;
     --button-padding:8px 30px
 }
+
 .grape-nuts-regular {
     font-family: "Grape Nuts", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
   
 .body {
     font-family: var(--font-family);

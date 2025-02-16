@@ -8,7 +8,7 @@
 
 <section id="letter">
     <div>
-        <div class="envelop" (click)="">
+        <div class="envelop">
             <img class="envelope-top" src="/images/envelope-top.png" alt="envelope top">
             <img class="envelope-top-closed" src="/images/envelope-top-closed.png" alt="envelope top">
             <img class="envelope-backside" src="/images/envelope-backside.png" alt="envelope backside">

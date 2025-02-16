@@ -1,4 +1,3 @@
-
 let animationIsAlreadyPlayed = false ;
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".explore-button");
