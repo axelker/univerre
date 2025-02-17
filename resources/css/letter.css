@@ -12,14 +12,12 @@
     justify-content: center;
 }
 
-/* Partie arrière fixe */
 .envelope-backside {
     position: absolute;
     width: 100%;
     z-index: 1;
 }
 
-/* Partie du haut ouverte*/
 .envelope-top {
     position: absolute;
     width: 100%;
@@ -42,23 +40,18 @@
     transition: all 1s ease-in-out;
 }
 
-
-/* Partie side fixe*/
 .envelope-sides {
     position: absolute;
     width: 100%;
     z-index: 3
 }
 
-/* Partie du bas fixe */
 .envelope-bottom {
     position: absolute;
     width: 100%;
     bottom: 55px;
     z-index: 4;
 }
-
-/* NFC pin centré fix */
 
 .nfc-pin {
     position: absolute;
@@ -129,7 +122,6 @@
     transition: opacity 1s ease-in-out;
 }
 
-/* Texte */
 .message {
     position: absolute;
     bottom: 65px;
